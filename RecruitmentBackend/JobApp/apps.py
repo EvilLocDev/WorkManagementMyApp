@@ -1,9 +1,9 @@
 from django.apps import AppConfig
 
 
-class AuthappConfig(AppConfig):
+class JobappConfig(AppConfig):
     default_auto_field = 'django.db.models.BigAutoField'
-    name = 'AuthApp'
+    name = 'JobApp'
 
     def ready(self):
-        import AuthApp.signals
+        import JobApp.signals
